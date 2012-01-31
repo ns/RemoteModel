@@ -3,10 +3,9 @@ Easy to use ActiveRecord-like interface to make RESTful API calls
 
 == Useful Links:
 
-ASIHTTPRequest: http://allseeing-i.com/ASIHTTPRequest/
-SBJson: http://stig.github.com/json-framework/
-
-Tutorial: http://randbyte.com/article/restful-api-access-ios5/
+* ASIHTTPRequest: http://allseeing-i.com/ASIHTTPRequest/
+* SBJson: http://stig.github.com/json-framework/
+* Tutorial: http://randbyte.com/article/restful-api-access-ios5/
 
 == API Summary
 
@@ -27,11 +26,11 @@ Below is a summary of the most available methods.
 
 == Installation:
 
-(1) Automatic Reference Counting (ARC) needs to be enabled.
-(2) Install ASIHTTPRequest http://allseeing-i.com/ASIHTTPRequest/Setup-instructions
-(3) Install SBJson http://stig.github.com/json-framework/
-(4) Drag & Drop the two files into your Xcode project.
-(5) Enjoy
+1. Automatic Reference Counting (ARC) needs to be enabled.
+2. Install ASIHTTPRequest http://allseeing-i.com/ASIHTTPRequest/Setup-instructions
+3. Install SBJson http://stig.github.com/json-framework/
+4. Drag & Drop the two files into your Xcode project.
+5. Enjoy
 
 == Features:
 
