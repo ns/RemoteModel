@@ -1,0 +1,42 @@
+= RemoteModel
+Easy to use ActiveRecord-like interface to make RESTful API calls
+
+== Useful Links:
+
+ASIHTTPRequest: http://allseeing-i.com/ASIHTTPRequest/
+SBJson: http://stig.github.com/json-framework/
+
+Tutorial: http://randbyte.com/article/restful-api-access-ios5/
+
+== API Summary
+
+Below is a summary of the most available methods.
+
+- (id)initWithBaseURL:(NSString*)aBaseUrl;
+- (void)findAll;
+- (void)findOne:(NSString*)anId;
+- (void)create:(NSDictionary*)params;
+- (void)update:(NSString*)anId params:(NSDictionary*)params;
+- (void)destroy:(NSString*)anId;
+- (void)actionOnResource:(NSString*)anId action:(NSString*)anAction postParams:(NSDictionary*)params;
+- (void)get:(NSString*)url;
+- (void)post:(NSString*)url postParams:(NSDictionary*)postParams;
+- (void)setCompletionBlock:(RemoteModelBasicBlock)aCompletionBlock;
+- (void)setFailedBlock:(RemoteModelBasicBlock)aFailedBlock;
+- (void)signWithApiToken:(NSString*)anApiToken;
+
+== Installation:
+
+(1) Automatic Reference Counting (ARC) needs to be enabled.
+(2) Install ASIHTTPRequest http://allseeing-i.com/ASIHTTPRequest/Setup-instructions
+(3) Install SBJson http://stig.github.com/json-framework/
+(4) Drag & Drop the two files into your Xcode project.
+(5) Enjoy
+
+== Features:
+
+* Simple RESTful methods for the basic stuff (findOne, findAll, create, update, delete).
+* Built on top of ASIHTTPRequest & SBJson.
+* Response is automatically parsed with SBJson.
+* Callbacks using blocks - no need for tons of extra methods.
+* Method to sign all requests with an API token for authentication.
